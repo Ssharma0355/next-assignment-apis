@@ -19,7 +19,7 @@ mongoose
     useUnifiedTopology: true,
   })
   .then(() => console.log("✅ MongoDB Connected"))
-  .catch((err) => console.error("❌ MongoDB Connection Error:", err));
+  .catch((err) => console.error("MongoDB Connection Error:", err));
 
 // API route to handle POST request
 app.post("/api/user", async (req, res) => {
@@ -81,4 +81,4 @@ app.get("/api/users", async (req, res) => {
 
 // Start Server
 const PORT = process.env.PORT || 8080;
-http.listen(PORT, () => console.log(`🚀 Server running on PORT ${PORT}`));
+http.listen(PORT, () => console.log(`Server running on PORT ${PORT}`));
